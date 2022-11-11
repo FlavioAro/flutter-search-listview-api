@@ -17,7 +17,6 @@ class _MySearchState extends State<MySearch> {
       child: TextField(
         autofocus: false,
         onChanged: widget.onChanged,
-        // controller: _textController,
         decoration: InputDecoration(
           border: const OutlineInputBorder(),
           prefixIcon: const Icon(Icons.search),
