@@ -6,9 +6,9 @@ import '../../models/character_model.dart';
 // Page
 import '../pages/character_details_page.dart';
 
-class MyListView extends StatelessWidget {
+class MyListTile extends StatelessWidget {
   final Character character;
-  const MyListView({Key? key, required this.character}) : super(key: key);
+  const MyListTile({Key? key, required this.character}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

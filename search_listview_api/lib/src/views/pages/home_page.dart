@@ -8,7 +8,7 @@ import '../../controllers/character_controller.dart';
 
 // Components
 import '../components/loading.dart';
-import '../components/listview_tile.dart';
+import '../components/list_tile.dart';
 import '../components/search.dart';
 
 class HomePage extends StatefulWidget {
@@ -64,7 +64,7 @@ class _HomePageState extends State<HomePage> {
                         });
                       },
                     )
-                  : MyListView(character: _charactersDisplay[index - 1]);
+                  : MyListTile(character: _charactersDisplay[index - 1]);
             } else {
               return const MyLoading();
             }
