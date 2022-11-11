@@ -13,7 +13,7 @@ class CharacterDetailsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Character'),
+        title: const Text('Character Breaking Bad'),
       ),
       body: SafeArea(
         child: Column(
