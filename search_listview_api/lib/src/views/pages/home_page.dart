@@ -8,7 +8,7 @@ import '../../controllers/character_controller.dart';
 
 // Components
 import '../components/loading.dart';
-import '../components/list_tile.dart';
+import '../components/list.dart';
 import '../components/search.dart';
 
 class HomePage extends StatefulWidget {
@@ -41,7 +41,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Home'),
+        title: const Text('Breaking Bad'),
       ),
       body: SafeArea(
         child: ListView.builder(

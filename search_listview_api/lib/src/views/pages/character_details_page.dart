@@ -13,7 +13,7 @@ class CharacterDetailsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Character Breaking Bad'),
+        title: const Text('Character Details'),
       ),
       body: SafeArea(
         child: Column(
@@ -32,7 +32,7 @@ class CharacterDetailsPage extends StatelessWidget {
               height: 22.0,
             ),
             Text(
-              '${character.name} ${character.nickname}',
+              character.name,
               style: const TextStyle(
                 fontSize: 25.0,
                 fontWeight: FontWeight.w700,
@@ -41,6 +41,14 @@ class CharacterDetailsPage extends StatelessWidget {
             ),
             const SizedBox(
               height: 12.0,
+            ),
+            Text(
+              character.nickname,
+              style: const TextStyle(
+                fontSize: 18.0,
+                fontWeight: FontWeight.w500,
+              ),
+              textAlign: TextAlign.left,
             ),
             Text(
               character.portrayed,
@@ -52,19 +60,6 @@ class CharacterDetailsPage extends StatelessWidget {
             ),
             const SizedBox(
               height: 12.0,
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                Text(
-                  character.birthday,
-                  style: const TextStyle(
-                    fontSize: 16.0,
-                    fontWeight: FontWeight.w300,
-                  ),
-                  textAlign: TextAlign.left,
-                ),
-              ],
             ),
           ],
         ),

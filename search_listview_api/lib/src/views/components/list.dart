@@ -30,7 +30,6 @@ class MyListTile extends StatelessWidget {
               children: [
                 Text(character.nickname),
                 Text(character.portrayed),
-                Text(character.birthday),
               ],
             ),
             onTap: () {
